@@ -1,0 +1,204 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background: #596972;
+    align-items: center;
+    padding: 9px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Asap', sans-serif;
+    font-family: 'Noto Color Emoji', sans-serif;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link {
+    color: white;
+}
+
+nav a {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    color: #B5C5D7;
+    background-color: black;
+}
+
+@media (max-width:700px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px;
+    }
+}
+
+.encabezado {
+    background-image: url("https://img.freepik.com/premium-vector/big-family-happy-parents-children-grandma-grandpa-smiling-dad-mom-kids-dog-three-generation-standing-together-vector-portrait-illustration-family-grandma-grandpa-girl-boy_102902-4076.jpg?w=2000");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(20, 20, 20);
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    height: 310px;
+}
+
+.contenedor-contenido {
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+article {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    position: relative;
+    border-radius: 6px;
+}
+
+article:before {
+    content:'';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #33b1ff ;
+}
+
+article h2 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 40px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+article h3 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 25px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+
+article p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+    font-family: 'Roboto', sans-serif;
+}
+
+.documento {
+    color: black;
+    margin-top: 25px;
+}
+
+footer {
+    background: #153f59;
+    height: auto;
+    width: 100vw;
+    font-family: 'Asap', sans-serif;
+    padding-top: 27px;
+    color: white;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contenido h3 {
+    font-size: 23px;
+    font-weight: 1px;
+    line-height: 21px;
+}
+
+.contenido p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 22px;
+}
+
+.iconos {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 22px 0 16px 0;
+}
+
+.iconos li {
+    list-style: none;
+    margin: 0 7px;  
+}
+
+.iconos a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.iconos a i{
+    font-size: 24px;
+    transition: color .4s ease;
+}
+
+.iconos a:hover i {
+    color: #B5C5D7;
+}
+
+.footer-bottom {
+    background: #153f59;
+    width: 100vw;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    word-spacing: 4px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.copy {
+    margin-bottom: 10px;
+}
