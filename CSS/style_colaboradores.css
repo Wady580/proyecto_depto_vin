@@ -1,0 +1,98 @@
+* {
+    background-color: #f3fafa;
+}
+
+.header {
+	padding:0;
+	margin:0;
+	background:rgb(143, 140, 140);
+}
+
+
+.menu_nav {
+	margin:0;
+	padding:0 50px 0 0;
+	
+}
+
+.menu_nav {
+	margin:0;
+	padding:0 50px 0 0;
+	
+}
+.menu_nav ul {
+	list-style:none;
+	margin:0;
+	padding:16px 0;
+	float:right;
+	height:20px;
+}
+.menu_nav ul li {
+	margin:0;
+	padding:0;
+	float:left;
+}
+.menu_nav ul li a {
+	display:block;
+	margin:0;
+	padding:2px 20px;
+	color:#7b7a7a;
+	text-decoration:none;
+	font-size:13px;
+	line-height:16px;
+	background:none;
+	border-right:1px solid #afafaf;
+}
+.menu_nav ul li.active a, .menu_nav ul li a:hover {
+	text-decoration:none;
+	color:#6cc7ff;
+}
+.sb_menu li a:f{
+	text-decoration:none;
+	color:#6cc7ff;
+}
+.logo {
+	float:left;
+	width:300px;
+	height:30px;
+	padding:12px 20px 10px;
+	margin:0 auto;
+}
+
+h1 {
+	margin:0;
+	padding:0;
+	color:#afaeae;
+	font:bold 22px/1.2em Arial, Helvetica, sans-serif;
+	letter-spacing:-2px;
+}
+h1 a, h1 a:hover {
+	color:#afaeae;
+	text-decoration:none;
+}
+h1 span {
+	color:#333939;
+}
+h1 small {
+	padding:0 20px;
+	font:normal 12px/1.2em Arial, Helvetica, sans-serif;
+	letter-spacing:normal;
+}
+
+.encabezado {
+    background-image: url("https://seculoxximinas.com.br/fgv/wp-content/uploads/2019/08/motivacao-de-colaboradores-voce-esta-cometendo-estes-erros_1092019956550.png") ;
+    height: 350px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.nom {
+    padding-top: 5px;
+    padding-bottom: 5px ;
+    font-size: 50px;
+
+}
