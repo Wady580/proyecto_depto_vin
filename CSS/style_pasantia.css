@@ -401,6 +401,7 @@ footer {
 .secciones {
     text-align: center;
     display: flex;
+    
 }
 .nuevo {
     font-size: 20px;
