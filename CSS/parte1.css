@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-.centro {
-    text-align: center;
-}
-
 body {
     margin: 0;
     background-color: #fff6f6 !important;
