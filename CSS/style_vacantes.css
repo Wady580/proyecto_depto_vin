@@ -13,6 +13,64 @@
 
 }
 
+header {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background: #153f59 !important;
+    align-items: center;
+    padding: 9px;
+}
+
+.nombre {
+    padding: 10px;
+    color: white;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 5px;
+}
+
+a {
+    text-decoration: none !important;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.link {
+    color: white;
+}
+
+nav a {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    color: #B5C5D7;
+    background-color: black;
+    
+}
+
+@media (max-width:700px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px;
+    }
+}
+
 .encabezado {
 
     background-image: url("https://www.cronista.com/files/image/294/294673/5ffe08b6695ec_950_534!.jpg?s=6e2e8b6aac18e7180efdc159deb290b8&d=1617035187");

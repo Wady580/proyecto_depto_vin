@@ -10,12 +10,29 @@
 
 <body>
 
+<header data-aos="fade-in">
+    <!--Menú-->
+    <a href="inicio.html" class="logo">
+        <!--img src="" class="logo"-->
+        <h2 class="nombre">Inicio</h2>
+    </a>
+
+    <!--Barra de navegación del menú-->
+    <nav>
+        <a href="pasantia.html" class="link">Pasantía</a>
+        <a href="colaboradores.html" class="link">Colaboradores</a>
+        <a href="familia.html" class="link">Familia</a>
+        <a href="formularios.html" class="link">Formularios</a>
+    </nav>
+</header>
+
+
 <div class="encabezado con">
     <h1 class="nom" data-aos="fade-up"> Coloca las vacantes</h1>
     <p data-aos="fade-up"> Rellena los datos relacionados a la vacante </p>
 </div>
 
-<form action="vacantes.php" method=get>
+<form action="frm_vacantes.php" method=get>
 
 <h1 class="titulo">Formulario de vacantes</h1>
 
