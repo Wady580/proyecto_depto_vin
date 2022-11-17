@@ -4,17 +4,28 @@
     box-sizing: border-box;
 }
 
+.centro {
+    text-align: center;
+}
+
 body {
     margin: 0;
+    background-color: #fff6f6 !important;
 }
 
 header {
     display: flex;
     min-height: 70px;
     justify-content: space-between;
-    background: #153f59;
+    background: #153f59 !important;
     align-items: center;
     padding: 9px;
+}
+
+.nombre {
+    padding: 10px;
+    color: white;
+
 }
 
 .logo {
@@ -25,16 +36,14 @@ header {
     padding-left: 5px;
 }
 
-
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color:white;
     font-family: 'Roboto', sans-serif;
 }
 
 .link {
     color: white;
-    
 }
 
 nav a {
@@ -46,8 +55,9 @@ nav a {
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #B5C5D7;
     background-color: black;
+    
 }
 
 @media (max-width:700px) {
@@ -62,40 +72,53 @@ nav a:hover {
 }
 
 .encabezado {
-    background: rgb(28,19,182);
-    background-image: url("https://www.meme-arsenal.com/memes/f9371a8fa554687efc9c00f8721ae43e.jpg");
+    background-image: url("https://www.unir.net/wp-content/uploads/2021/03/businessman-signing-contract-of-law-picture-id1206902795.jpg");
+    height: 220px;
+    background-position: center;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    height: 300px;
-    
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
 }
 
+
+.encabezado.con::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right top, #f7b8b899, #d4495c99, #93005b99, #bf006199, #eb5012a8);
+    z-index: -1;
+  }
+
 .nom {
-    font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 5px;
     padding-bottom: 5px ;
     font-size: 50px;
     font-weight: bold;
-    background: linear-gradient(180deg, rgb(255, 255, 255),white);
+    background: linear-gradient(180deg, gray,white);
     background-clip:text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
 .encabezado p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    text-align: justify;
-    
+    font-family: 'roboto', sans-serif;
+    font-size: 18px;
 }
 
-
-   
+.introduccion {
+    display: flex;
+    background-image: radial-gradient(circle at 36.69% 45.16%, #fdffff 0, #f2f4fa 25%, #e5e4df 50%, #d6d4c4 75%, #c6c6ac 100%);
+}
 
 .introduccion img {
     max-height: 300px;
@@ -105,25 +128,43 @@ nav a:hover {
     margin-bottom: 45px;
 }
 
-.introduccion h2 {
+.fondo {
+    margin: 30px;
+}
+
+.fondo img {
+    margin: 10px;
+}
+
+.fondo p {
     
-   font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    text-align: left;
-    padding-top: 60px;
-    padding-left: 30px;
-    font-size: 30px;
-    
+    text-align: justify;
+
 }
 
 .introduccion p {
     margin-top: 44px;
-    margin-left: 30px;
-    font-size: 18px;
-    text-align: left;
-    font-family:'Roboto', sans-serif;
+    margin-right: 30px;
+    font-family:'roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
 }
 
+.introduccion spam {
+    margin-top: 44px;
+    margin-right: 30px;
+    font-family:'robo', sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+
+.planetas {
+    padding: 16px;
+    display: flex;
+    background-image: url("https://i.pinimg.com/originals/6b/8d/71/6b8d7110ee6232dcd3e1a1a95e395f2d.jpg");
+    height: 250px;
+    background-size: cover;
+}
 
 .item {
     margin: 10px;
@@ -167,7 +208,7 @@ nav a:hover {
 
 .datos p {
     margin-top: 50px;
-    margin-left: 90px;
+    margin-left: 100px;
     padding-left: 100px;
     font-family:'Noto Color Emoji', sans-serif;
     font-size: 22px;
@@ -382,37 +423,7 @@ footer {
     font-size: 13px;
     word-spacing: 4px;
 }
-.secciones h2 {
-    font-size: 25px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 55px;
-}
-.secciones h3 {
-    font-family: 'Roboto', sans-serif;
-}
-.secciones img {
-   width: 150px;
-   height: 150px;
-
-    
-}
-
-.secciones {
-    text-align: center;
-    display: flex;
-    
-}
-.nuevo {
-    font-size: 20px;
-    text-align: left;
-    font-family: 'Roboto', sans-serif;
-    margin-left: 25px;
-    margin-bottom: 30px;
-
-}
 
 ::-webkit-scrollbar {
     display: none;
 }
-
