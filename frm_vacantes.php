@@ -36,6 +36,8 @@
 
 <h1 class="titulo">Formulario de vacantes</h1>
 
+<div class="general" id="general">
+
 <div class="derecha">
 <p>Nombre de la empresa</p>
 <input type="text" name="NombreEmpresa" placeholder="Escribe el nombre de la empresa" size=30>
@@ -77,7 +79,12 @@
 <br/> 
 <input type="submit" name="Enviar" value="Enviar" id="boton">
 
+</div>
 
+</form>
+
+<form action="controlvacante.php" method="post">
+<center><input type="submit" name="controlvacante" value="Control vacantes" id="boton"></center>
 </form>
 
 <!--Footer-->

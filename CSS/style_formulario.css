@@ -87,7 +87,7 @@ nav a:hover {
 
 .principal {
     padding: 10px;
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(236, 236, 236);
     overflow: hidden;
 }
 
@@ -117,10 +117,13 @@ nav a:hover {
 
 .boton {
     text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 #enviar {
     margin-top: 10px;
+    padding: 5px;
+    text-decoration: center;
 }
 
 /* Footer */
