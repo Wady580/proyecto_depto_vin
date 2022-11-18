@@ -31,7 +31,7 @@
 
 <div class="uno">
 <h2>Buscar vacante</h2>
-<form action="buscarvacante.php" method="post">
+<form action="controlvacante.php" method="post">
     <p>Digite el ID de la vacante que desea buscar</p>
     <input type="text" name="id" placeholder="ID">
     <input type="submit" name="editar" value="Enviar">
@@ -80,7 +80,14 @@ if ($mysqli->connect_errno) {
 
 // Mostrar datos
 
-$query = "SELECT * from vacante";
+
+if (isset($_POST['id'])) {
+    $id = $_POST['id'];
+    $query = "SELECT * FROM vacante WHERE id_vacante like '%$id%' or nombre_puesto like '%$id%'";
+} else {
+    $query = "SELECT * from vacante";
+}
+
 $data = mysqli_query($mysqli,$query);
 $total = mysqli_num_rows($data);
 
