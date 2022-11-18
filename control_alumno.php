@@ -27,7 +27,7 @@
 
 <div class="flotar">
 <h2>Editar alumno</h2>
-<form action="alumnoedit.php" method="post">
+<form action="PHP/be-update_alumno.php" method="post">
     <p>Digita el ID del alumno a editar</p>
     <input type="number" name="id" placeholder ="ID">
     <input type="submit" name="editar" value="Enviar">
@@ -38,7 +38,7 @@
 
 <div class="flotado">
 <h2>Buscar alumno</h2>
-<form action="buscaralumno.php" method="post">
+<form action="PHP/be-select_alumno.php" method="post">
     <p>Digita el ID del alumno a editar</p>
     <input type="text" name="nombres" placeholder ="ID">
     <input type="submit" name="editar" value="Enviar">
@@ -83,7 +83,7 @@
    
 <?php
 
-$mysqli = new mysqli("localhost", "root", "", "proyecto");
+$mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
 if ($mysqli->connect_errno) {
 echo "Fallo al conectar a MySQL: (" . $mysqli
 ->connect_errno . ") " . $mysqli->connect_error;
