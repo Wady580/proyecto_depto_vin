@@ -11,7 +11,7 @@
 <?php
 
 //Conexion
-$mysqli = new mysqli("localhost", "root","","proyecto_depto");
+$mysqli = new mysqli("localhost:3307", "root","","proyect_depto");
 
 if ($mysqli->connect_errno) {
 
@@ -47,7 +47,7 @@ if ($resultCheck > 0) {
 
 ?>
 
-<form action="vacanteactualiza.php" method="post">
+<form action="be-updateSQL_vacante.php" method="post">
 
 <p>ID de la vacante</p>
 <input type="number" name="id" size=30 value="<?php echo $id_vacante ?>"> 

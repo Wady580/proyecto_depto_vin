@@ -1,7 +1,7 @@
 <?php
 
 //Conexion
-$mysqli = new mysqli("localhost", "root","","proyecto_depto");
+$mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
 
 if ($mysqli->connect_errno) {
 
@@ -19,6 +19,6 @@ echo $query;
 mysqli_query($mysqli,$query);
 
 
-header("location: controlvacante.php?insert-succes");
+header("location: ../control_vacante.php?insert-succes");
 
 ?>

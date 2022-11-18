@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style_vacantes.css" rel="stylesheet" type="text/css">
+    <link href="CSS/style_vacantes.css" rel="stylesheet" type="text/css">
     <title>Vacantes</title>
 </head>
 
@@ -28,7 +28,7 @@
 
 
 <div class="encabezado con">
-    <h1 class="nom" data-aos="fade-up"> Coloca las vacantes</h1>
+    <h1 class="nom" data-aos="fade-up">Coloca las vacantes</h1>
     <p data-aos="fade-up"> Rellena los datos relacionados a la vacante </p>
 </div>
 
@@ -83,7 +83,7 @@
 
 </form>
 
-<form action="controlvacante.php" method="post">
+<form action="control_vacante.php" method="post">
 <center><input type="submit" name="controlvacante" value="Control vacantes" id="boton"></center>
 </form>
 
@@ -106,7 +106,7 @@
 
 if(isset($_GET['Enviar'])){
     
-$mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
+$mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
 if ($mysqli->connect_errno) {
 echo "Fallo al conectar a MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }

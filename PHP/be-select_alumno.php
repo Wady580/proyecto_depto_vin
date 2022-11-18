@@ -50,12 +50,8 @@
 
 <?php
 
-$mysqli = new mysqli("localhost", "root", "", "proyecto");
-
-
-
- 
-  $query = "SELECT * FROM alumno WHERE nombres like '%$nombre%' or id='$nombre' ";
+$mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
+  $query = "SELECT * FROM alumno WHERE nombres like '%$nombre%' or id='$nombre'";
   $data = mysqli_query($mysqli, $query);
   $total = mysqli_num_rows($data);
 
@@ -108,7 +104,7 @@ $mysqli = new mysqli("localhost", "root", "", "proyecto");
 </div>
 </center>
 <div class="volver" style="text-align: center;padding-top:20px;">
-<form action="editar_alumno.php">
+<form action="../control_alumno.php">
   <input type="submit" value="volver">
 </form>
 </div>
