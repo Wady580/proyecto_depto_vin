@@ -52,7 +52,7 @@ nav a {
 
 nav a:hover {
     color: #B5C5D7;
-    background-color: black;
+   
     
 }
 
@@ -67,6 +67,40 @@ nav a:hover {
     }
 }
 
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+
+}
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    z-index: 100 !important; 
+    background-color:#153f59;
+   
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 .encabezado {
     background-image: url("https://www.unir.net/wp-content/uploads/2021/03/businessman-signing-contract-of-law-picture-id1206902795.jpg");
     height: 220px;
