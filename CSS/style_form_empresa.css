@@ -6,17 +6,13 @@
   font-family: 'Poppins',sans-serif;
 }
 body{
-  height: 193vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
   background: linear-gradient(135deg, #c3deef, #b66c59);
 }
 .container{
   max-width: 1349px;
   height: 1470px;
-  
+  margin-right: auto;
+  margin-left: auto;
   background-color: #fff;
   padding: 25px 30px;
   border-radius: 5px;
@@ -215,6 +211,8 @@ form .input-box span.details{
   
  @media(max-width: 684px){
  .container{
+  margin-right: auto;
+  margin-left: auto;
   max-width: 100%;
 }
 .hol{
@@ -239,7 +237,8 @@ form .user-details .input-box{
     width: 5px;
   }
   .container{
-
+    margin-right: auto;
+    margin-left: auto;
     padding: 25px 20px;
    
   }
@@ -260,16 +259,13 @@ form .user-details .input-box{
   }
 
   .container{
+    margin-right: auto;
+    margin-left: auto;
     max-width: 1200px;
     height: 730px;
   }
 
   body{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
     background: linear-gradient(135deg, #c3deef, #b66c59);
   }
 }

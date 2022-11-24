@@ -8,9 +8,9 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="css/style_index.css" rel="stylesheet" type="text/css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Asap&family=Noto+Color+Emoji&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
 <link href="CSS/style_pasantia.css" rel="stylesheet" type="text/css">
 
 
@@ -28,13 +28,20 @@
 
     <!--Barra de navegación del menú-->
     <nav>
-        <a href="pasantia.html" class="link">Pasantía</a>
-        <a href="colaboradores.html" class="link">Coloboradores</a>
-        <a href="familia.html" class="link">Familia</a>
-        <a href="formularios.html" class="link">Formularios</a>
-       
-    </nav>
-</header>
+        <ul class="menu-horizontal">
+          <a href="pasantia.html" class="link a">Pasantía</a>
+          <a href="colaboradores.html" class="link a">Colaboradores</a>
+          <a href="familia.html" class="link a">Familia</a>
+          <li><a href="#" >Formularios</a>
+          <ul class="menu-vertical">
+            <li><a href="frm_alumno.php">Alumno</a></li>
+            <li><a href="frm_vacantes.php">Vacantes</a></li>
+            <li><a href="form_empresa.php">Empresas</a></li>
+          </ul>
+        </li>
+        </ul>
+      </nav>
+  </header>
 
    <!--Header (Encabezado)-->
 <div class="encabezado" data-aos="fade-in">

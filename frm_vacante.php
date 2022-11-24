@@ -7,6 +7,7 @@
      <link rel="stylesheet" href="CSS/style_form_vacante.css">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
      <link href="CSS/style_alumno.css" rel="stylesheet" type="text/css">
+     <link href="CSS/style_index.css" rel="stylesheet" type="text/css">
      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
    </head>
 <body>
@@ -20,10 +21,18 @@
 
     <!--Barra de navegación del menú-->
     <nav>
-        <a href="pasantia.html" class="link">Pasantía</a>
-        <a href="colaboradores.html" class="link">Colaboradores</a>
-        <a href="familia.html" class="link">Familia</a>
-        <a href="formularios.html" class="link">Formularios</a>
+      <ul class="menu-horizontal">
+        <a href="pasantia.html" class="link a">Pasantía</a>
+        <a href="colaboradores.html" class="link a">Colaboradores</a>
+        <a href="familia.html" class="link a">Familia</a>
+        <li><a href="#" >Formularios</a>
+        <ul class="menu-vertical">
+          <li><a href="frm_alumno.php">Alumno</a></li>
+          <li><a href="frm_vacantes.php">Vacantes</a></li>
+          <li><a href="form_empresa.php">Empresas</a></li>
+        </ul>
+      </li>
+      </ul>
     </nav>
 </header>
 

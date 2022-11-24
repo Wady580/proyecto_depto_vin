@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/style_familia.css">
+
   <title>Familia</title>
 </head>
 
@@ -21,10 +22,18 @@
 
     <!--Barra de navegación del menú-->
     <nav>
-        <a href="pasantia.html" class="link">Pasantía</a>
-        <a href="colaboradores.html" class="link">Colaboradores</a>
-        <a href="familia.html" class="link">Familia</a>
-        <a href="formularios.html" class="link">Formularios</a>
+      <ul class="menu-horizontal">
+        <a href="pasantia.html" class="link a">Pasantía</a>
+        <a href="colaboradores.html" class="link a">Colaboradores</a>
+        <a href="familia.html" class="link a">Familia</a>
+        <li><a href="#" >Formularios</a>
+        <ul class="menu-vertical">
+          <li><a href="frm_alumno.php">Alumno</a></li>
+          <li><a href="frm_vacantes.php">Vacantes</a></li>
+          <li><a href="form_empresa.php">Empresas</a></li>
+        </ul>
+      </li>
+      </ul>
     </nav>
 </header>
 
