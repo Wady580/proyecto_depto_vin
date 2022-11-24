@@ -31,7 +31,7 @@
 
 <div class="uno">
 <h2>Buscar vacante</h2>
-<form action="controlvacante.php" method="post">
+<form action="control_vacante.php" method="post">
     <p>Digite el ID de la vacante que desea buscar</p>
     <input type="text" name="id" placeholder="ID">
     <input type="submit" name="editar" value="Enviar">
@@ -40,7 +40,7 @@
 
 <div class="dos">
 <h2>Editar vacante</h2>
-<form action="actualizarvacante.php" method="post">
+<form action="PHP/be-update_vacante.php" method="post">
     <p>Digite el ID de la vacante que desea editar</p>
     <input type="number" name="id_vacante" placeholder="ID">
     <input type="submit" name="editar" value="Enviar">

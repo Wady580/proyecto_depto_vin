@@ -50,7 +50,7 @@
 
 <?php
 
-$mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
+$mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
   $query = "SELECT * FROM alumno WHERE nombres like '%$nombre%' or id='$nombre'";
   $data = mysqli_query($mysqli, $query);
   $total = mysqli_num_rows($data);
