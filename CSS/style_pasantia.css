@@ -94,18 +94,27 @@ nav a:hover {
     
 }
 
-
-   
-
-.introduccion img {
-    max-height: 300px;
-    padding-left: 45px;
-    padding-right: 25px;
-    margin-top: 45px;
-    margin-bottom: 45px;
+.fondo {
+    margin: 30px;
 }
 
-.introduccion h2 {
+.fondo img {
+    margin: 10px;
+}
+
+.fondo p {
+    
+    text-align: justify;
+
+}
+   
+
+.introduccion {
+    margin: 30px;
+    text-align: justify;
+}
+
+/*.introduccion h2 {
     
    font-family: 'Roboto', sans-serif;
     font-size: 22px;
@@ -122,7 +131,7 @@ nav a:hover {
     font-size: 18px;
     text-align: left;
     font-family:'Roboto', sans-serif;
-}
+}*/
 
 
 .item {

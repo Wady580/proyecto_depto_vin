@@ -37,7 +37,7 @@
         <form action="frm_alumno.php" method="post">
 
             <label for="">Nombres</label> </br>
-            <input type="text" name="nombres" placeholder="Escribe tus nombre/s">
+            <input type="text" name="nombres">
             <br><br>
 
             <label for="">Apellidos</label> </br>
@@ -163,12 +163,8 @@
 
         <br><br>
 
-        <label for="">Confirmación de contraseña</label> <br>
-        <input type="text" name="emailcon" id="">
 
-        <br><br>
-
-        <label for="">Confirmación de contraseña</label> <br>
+        <label for="">Contraseña</label> <br>
         <input type="text" name="contraseña" id="">
 
         <br><br>
@@ -239,7 +235,7 @@
 
         
     
-        <form action="editar_alumno.php" method="post">
+        <form action="control_alumno.php" method="post">
         <input type="submit" name="editar" value="Editar alumno">
         </form>
         
@@ -259,7 +255,7 @@
 
 
     <?php
-    $mysqli = new mysqli("localhost", "root", "", "proyecto");
+    $mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli
             ->connect_errno . ") " . $mysqli->connect_error;
@@ -309,7 +305,7 @@
             mysqli_close($mysqli);
         }
 
-        if ($_POST['email'] == $_POST['emailcon'] && $_POST['contraseña'] == $_POST['contraseñacon']) {
+        if ($_POST['contraseña'] == $_POST['contraseñacon']) {
             insertar($mysqli);
         } else {
             echo "Los emails o contraseñas son diferentes";

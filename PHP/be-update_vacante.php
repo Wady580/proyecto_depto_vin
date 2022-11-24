@@ -11,7 +11,7 @@
 <?php
 
 //Conexion
-$mysqli = new mysqli("localhost:3307", "root","","proyect_depto");
+$mysqli = new mysqli("localhost", "root","","proyecto_depto");
 
 if ($mysqli->connect_errno) {
 
@@ -24,6 +24,7 @@ if ($mysqli->connect_errno) {
 $id_vacante = $_POST['id_vacante'];
 
 $sql = "SELECT * FROM vacante where id_vacante=$id_vacante";
+
 
 $result = mysqli_query($mysqli,$sql);
 $resultCheck = mysqli_num_rows($result);
