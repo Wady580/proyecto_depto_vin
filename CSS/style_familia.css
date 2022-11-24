@@ -6,27 +6,34 @@
 
 body {
     margin: 0;
+    background-color: #fff6f6 !important;
 }
 
 header {
     display: flex;
     min-height: 70px;
     justify-content: space-between;
-    background: #596972;
+    background: #153f59 !important;
     align-items: center;
     padding: 9px;
+}
+
+.nombre {
+    padding: 10px;
+    color: white;
+
 }
 
 .logo {
     display: flex;
     align-items: center;
-    font-family: 'Asap', sans-serif;
-    font-family: 'Noto Color Emoji', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-left: 5px;
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     color:white;
     font-family: 'Roboto', sans-serif;
 }
@@ -45,7 +52,8 @@ nav a {
 
 nav a:hover {
     color: #B5C5D7;
-    background-color: black;
+   
+    
 }
 
 @media (max-width:700px) {
@@ -59,6 +67,40 @@ nav a:hover {
     }
 }
 
+.menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 50px;
+
+}
+
+.menu-horizontal > li > a {
+    display: block;
+    padding: 9px;
+    color: white;
+    text-decoration: none;
+
+}
+.menu-vertical {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    z-index: 100 !important; 
+    background-color:#153f59;
+   
+}
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+
+.menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
 .encabezado {
     background-image: url("https://img.freepik.com/premium-vector/big-family-happy-parents-children-grandma-grandpa-smiling-dad-mom-kids-dog-three-generation-standing-together-vector-portrait-illustration-family-grandma-grandpa-girl-boy_102902-4076.jpg?w=2000");
     background-size: cover;

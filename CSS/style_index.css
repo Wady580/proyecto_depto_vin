@@ -150,12 +150,11 @@ nav a:hover {
     background-image: radial-gradient(circle at 36.69% 45.16%, #fdffff 0, #f2f4fa 25%, #e5e4df 50%, #d6d4c4 75%, #c6c6ac 100%);
 }
 
-.introduccion img {
+ .introduccion .card-body #imagen {
     max-height: 300px;
-    padding-left: 45px;
-    padding-right: 25px;
-    margin-top: 45px;
-    margin-bottom: 45px;
+    padding-left: 35px;
+    padding-right: 15px;
+
 }
 
 .fondo {
