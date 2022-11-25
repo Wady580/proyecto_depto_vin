@@ -73,7 +73,6 @@
          <th>Email</th>
          <th>contrasena</th>
          <th>Anos_exp</th>
-         <th>CV</th>
          <th>Area</th>
          <th>Seleccion</th>
 
@@ -126,7 +125,6 @@ if ($total!=0) {
         <td>" . $row['email'] . "</td>
         <td>" . $row['contrasena'] . "</td>
         <td>" . $row['anos_experiencia'] . "</td>
-        <td>" . $row['cv'] . "</td>
         <td>" . $row['area'] . "</td>
         <td>" . $row['seleccion'] . "</td>
 
