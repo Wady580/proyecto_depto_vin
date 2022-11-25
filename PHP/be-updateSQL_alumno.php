@@ -1,6 +1,6 @@
 <?php
 
-$mysqli = new mysqli("localhost", "root", "", "proyecto");
+$mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
 
 
 $id = $_POST['id'];

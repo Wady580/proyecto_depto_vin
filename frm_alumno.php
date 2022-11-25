@@ -22,6 +22,7 @@
             <a href="formularios.html" class="link">Formularios</a>
         </nav>
     </header>
+
     <br><br>
   <div class="container">
     <div class="title">Registrarse como Alumno</div>
@@ -32,6 +33,26 @@
           <div class="input-box">
             <span class="details">* Nombres del alumno</span>
             <input type="text" name="nombres" placeholder="José Leonardo" required>
+
+<br><br>
+   <center> <h2> Formulario de alumno</h2></center>
+   <br><br>
+    <div class="centro" style="float:left; margin-left: 290px; ">
+
+        <form action="frm_alumno.php" method="post">
+
+            <label for="">Nombres</label> </br>
+            <input type="text" name="nombres">
+            <br><br>
+
+            <label for="">Apellidos</label> </br>
+            <input type="text" name="apellido">
+
+            </br><br>
+
+            <label for="">Cédula de identidad</label> <br>
+            <input type="number" name="cedula">
+
             <br><br>
             <span class="details">* Apellido del alumno</span>
             <input type="text" name="apellido" placeholder="Muñoz Estrella" required>
@@ -267,6 +288,7 @@
         </div>
       </form>
     </div>
+
   </div>
   <br>
   <br>
@@ -283,6 +305,152 @@
 
   <?php
     $mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
+
+    
+<div class="formm" style="float: left; margin-left: 150px;">
+        <br><br>
+        <label for="">Carrera técnica </label> <br>
+        <select name="carrera" id="">
+            <option value="Gestion">Gestión Administrativa y Tributaria</option>
+            <option value="Daai">Desarrollo y Administración de Aplicaciones Informáticas</option>
+            <option value="Elca">Equipos Electrónicos</option>
+            <option value="Eldad">Instalaciones Eléctricas</option>
+            <option value="Muebles">Muebles y estructura de la madera</option>
+            <option value="Confeccion">Confección y Patronaje</option>
+            <option value="Mecanizado">Mecanizado</option>
+        </select>
+
+        <br><br>
+
+        <label for="">Técnico básico</label> <br>
+        <select name="basicote">
+            <option value="General" SELECTED>General</option>
+            <option value="Tecnico">Técnico</option>
+        </select>
+
+        <br><br>  
+
+
+        <label for="">Sección</label> <br>
+        <input type="text" name="seccion">
+
+        <br><br>
+
+        <label for="">Provincia</label> <br>
+        <select name="provincia">
+            <option value="jarabacoa" SELECTED>Jarabacoa</option>
+            <option value="santiago">Santiago</option>
+            <option value="la vega">La Vega</option>
+            <option value="santo domingo">Santo Domingo</option>
+        </select>
+
+        <br><br>
+
+
+        <label for="">Licencia</label> <br>
+        <input type="text" name="licencia" id="">
+
+        <br><br>
+
+        <label for="">Email</label> <br>
+        <input type="text" name="email" id="">
+
+        <br><br>
+
+
+        <label for="">Contraseña</label> <br>
+        <input type="text" name="contraseña" id="">
+
+        <br><br>
+
+
+        <label for="">Confirmación de contraseña</label> <br>
+        <label for=""></label>
+        <input type="text" name="contraseñacon" id="">
+
+        <br><br>
+
+        <label for="">Especifique el taller en el que desea continuar</label> <br>
+        <input type="text" name="seleccion"> <br>
+        <br><br>
+
+        <label for="">Año de graduación</label> <br>
+        <select name="añogra" id="">
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+            <option value="2012">2012</option>
+            <option value="2013">2013</option>
+            <option value="2014">2014</option>
+            <option value="2015">2007</option>
+            <option value="2016">2016</option>
+        </select>
+
+        <br><br>
+
+        <label for="">Curso</label> <br>
+        <select name="curso" id="">
+            <option value="3" SELECTED>3ro secundaria</option>
+            <option value="4">4to secundaria</option>
+            <option value="5">5to secundaria</option>
+            <option value="6">6to secundaria</option>
+        </select>
+
+        <br><br>
+
+
+        <label for="">¿Posee vehículo?</label> <br>
+        <input type="radio" name="posee" value="si">Si
+        <input type="radio" name="posee" value="no">No
+
+        <br><br>
+
+        <label for="">Años de experiencia</label> <br>
+        <input type="number" name="experiencia">
+
+        <br><br>
+
+
+        <label for="">Area</label> <br>
+        <input type="text" name="area">
+
+
+        </br>
+        </br>
+        
+    <input type="submit" name="enviar" value="Enviar">
+        </form>
+</br>
+</br>
+
+        
+    
+        <form action="control_alumno.php" method="post">
+        <input type="submit" name="editar" value="Editar alumno">
+        </form>
+        
+</div>
+
+ 
+    <!--Footer-->
+
+   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <?php
+    $mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
+
     if ($mysqli->connect_errno) {
         echo "Fallo al conectar a MySQL: (" . $mysqli
             ->connect_errno . ") " . $mysqli->connect_error;
@@ -329,6 +497,17 @@
           // echo $consulta;
          mysqli_query($mysqli, $consulta);
          mysqli_close($mysqli);
+
+
+            mysqli_query($mysqli, $consulta);
+            mysqli_close($mysqli);
+        }
+
+        if ($_POST['contraseña'] == $_POST['contraseñacon']) {
+            insertar($mysqli);
+        } else {
+            echo "Los emails o contraseñas son diferentes";
+
         }
         insertar($mysqli);
     }

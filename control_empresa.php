@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -66,7 +66,7 @@
             <?php
 
             //Conexion
-            $mysqli = new mysqli("localhost:3307", "root", "", "proyect_depto");
+            $mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
 
             if ($mysqli->connect_errno) {
 
@@ -77,7 +77,12 @@
 
             // Mostrar datos
        if (isset($_POST['id_empresa'])) {
-          $query = "SELECT * from empresa where id_empresa=$_POST[id_empresa]";
+        if (empty($_POST['id_empresa'])) {
+            $query = "SELECT * from empresa";
+        }else {
+            $id = $_POST['id_empresa'];
+          $query = "SELECT * from empresa where id_empresa=$id";
+        }
        }else {
            $query = "SELECT * from empresa";
        }

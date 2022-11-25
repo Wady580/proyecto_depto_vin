@@ -1,63 +1,107 @@
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    margin: 0;
-}
-
-header {
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    background: #596972;
-    align-items: center;
-    padding: 9px;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-family: 'Asap', sans-serif;
-    font-family: 'Noto Color Emoji', sans-serif;
-    padding-left: 5px;
-}
-
-a {
-    text-decoration: none;
-    color:white;
-    font-family: 'Roboto', sans-serif;
-}
-
-.link {
-    color: white;
-}
-
-nav a {
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 20px;
-}
-
-nav a:hover {
-    color: #B5C5D7;
-    background-color: black;
-}
-
-@media (max-width:700px) {
+    * {
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        background-color: #fff6f6 !important;
+    }
     
     header {
-        flex-direction: column;
+        display: flex;
+        min-height: 70px;
+        justify-content: space-between;
+        background: #153f59 !important;
+        align-items: center;
+        padding: 9px;
     }
-
-    nav {
+    
+    .nombre {
         padding: 10px;
+        color: white;
+    
     }
-}
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        padding-left: 5px;
+    }
+    
+    a {
+        text-decoration: none !important;
+        color:white;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .link {
+        color: white;
+    }
+    
+    nav a {
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 20px;
+    }
+    
+    nav a:hover {
+        color: #B5C5D7;
+       
+        
+    }
+    
+    @media (max-width:700px) {
+        
+        header {
+            flex-direction: column;
+        }
+    
+        nav {
+            padding: 10px;
+        }
+    }
+    
+    .menu-horizontal{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-right: 50px;
+    
+    }
+    
+    .menu-horizontal > li > a {
+        display: block;
+        padding: 9px;
+        color: white;
+        text-decoration: none;
+    
+    }
+    .menu-vertical {
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 150px;
+        z-index: 100 !important; 
+        background-color:#153f59;
+       
+    }
+    .menu-horizontal li:hover .menu-vertical {
+        display: block;
+    }
+    
+    
+    .menu-vertical li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+    }
 
 .encabezado {
     background-image: url("https://seculoxximinas.com.br/fgv/wp-content/uploads/2019/08/motivacao-de-colaboradores-voce-esta-cometendo-estes-erros_1092019956550.png");

@@ -8,8 +8,9 @@
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="css/style_index.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Asap&family=Noto+Color+Emoji&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-
 <link href="CSS/style_pasantia.css" rel="stylesheet" type="text/css">
 
 
@@ -27,13 +28,20 @@
 
     <!--Barra de navegación del menú-->
     <nav>
-        <a href="pasantia.html" class="link">Pasantía</a>
-        <a href="colaboradores.html" class="link">Coloboradores</a>
-        <a href="familia.html" class="link">Familia</a>
-        <a href="formularios.html" class="link">Formularios</a>
-       
-    </nav>
-</header>
+        <ul class="menu-horizontal">
+          <a href="pasantia.html" class="link a">Pasantía</a>
+          <a href="colaboradores.html" class="link a">Colaboradores</a>
+          <a href="familia.html" class="link a">Familia</a>
+          <li><a href="#" >Formularios</a>
+          <ul class="menu-vertical">
+            <li><a href="frm_alumno.php">Alumno</a></li>
+            <li><a href="frm_vacantes.php">Vacantes</a></li>
+            <li><a href="form_empresa.php">Empresas</a></li>
+          </ul>
+        </li>
+        </ul>
+      </nav>
+  </header>
 
    <!--Header (Encabezado)-->
 <div class="encabezado" data-aos="fade-in">
@@ -43,11 +51,11 @@
 </div>
 
 <!--Primera parte del cuerpo-->
-<div class="introduccion">
+<div class="card">
+<div class="card-body" style="margin: 4px; text-align: justify;">
   
     <h2> <b>Módulo de Formación en Centros de Trabajo (MFCT):</b> </h2> 
 <p>
-
 El Módulo de formación en Centros de Trabajo (MFCT), 
 es un bloque coherente  de formación 
 específica, constituido por un conjunto 
@@ -67,78 +75,103 @@ e interesante para el centro de trabajo. <br> <br>
 habilitando un proceso de retroalimentación al sistema educativo. <br> <br>
 
   </div>
+</div>
 
 <div class="nuevo">
 <h2>Horas a trabajar por taller:</h2> 
 </div>
 
-
-  <div class="secciones">
+<div class="fondo">
+    <div class="row row-cols-1 row-cols-md-4 g-4 justify-content-md-center">
     
-    <div> 
-     
-        <h3>Informática</h3>  
-         <div> <img src="IMG/informatica.png"></div>
-        <p>Cantidad de horas a trabajar: <br> 360</p>
+        <div class="col">
+        <div class="card" data-aos="fade-right">
+        <center><h5 class="card-title" style="margin-top: 8px;">Contabilidad</h5></center>
+          <center><img src="IMG/Contabilidad.png" width="200px"></center>
+          <div class="card-body">
+            <p class="card-text text-center" id="p-about">320 horas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+          <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title" style="margin-top: 8px;">Ebanisteria</h5></center>
+            <center><img src="IMG/Ebanisteria.png" width="200px"></center>
+            <div class="card-body">
+              <p class="card-text text-center" id="p-about">320 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+            <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title" style="margin-top: 8px;">Electrónica</h5></center>
+              <center><img src="IMG/electronica.png" width="200px"></center>
+              <div class="card-body">
+                <p class="card-text text-center" id="p-about">320 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title" style="margin-top: 8px;">Electricidad</h5></center>
+              <center><img src="IMG/electricidad.png" width="200px"></center>
+              <div class="card-body">
+                <p class="card-text text-center" id="p-about">320 horas</p>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col">
+            <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title" style="margin-top: 8px;">Informática</h5></center>
+              <center><img src="IMG/inf.png" width="200px"></center>
+              <div class="card-body">
+                <p class="card-text text-center" id="p-about">320 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title" style="margin-top: 8px;">Automotriz</h5></center>
+              <center><img src="https://ipisa.edu.do/wp-content/uploads/2018/08/3.png" width="200px"></center>
+              <div class="card-body">
+                <p class="card-text text-center" id="p-about">720 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title" style="margin-top: 8px;">Confección y Patronaje</h5></center>
+              <center><img src="IMG/diseño.png" width="200px"></center>
+              <div class="card-body">
+                <p class="card-text text-center" id="p-about">720 horas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card" data-aos="fade-right">
+            <center><h5 class="card-title style="margin-top: 8px;"">Mecanizado</h5></center>
+              <center><img src="IMG/Mecanizado.png" width="200px"></center>
+              <div class="card-body">
+                <p class="card-text text-center" id="p-about">720 horas</p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      <br><br>
+      </div>
     
-   </div>
-   <br> <br>
-   <div> 
-     
-    <h3>Contabilidad</h3>  
-     <div> <img src="IMG/contabilidad.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 360</p>
+    </div>
 
-</div>
-<br><br>
-<div> 
-     
-    <h3>Ebanistería</h3>  
-     <div> <img src="IMG/ebanisteria.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 360</p>
-
-</div>
-<br><br>
-<div> 
- 
-    <h3>Automotriz</h3>  
-     <div> <img src="IMG/auto.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 720</p>
-
-</div>
-<br><br>
-<div> 
-     
-    <h3>Mecánica Industrial</h3>  
-     <div> <img src="IMG/mecanica.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 720</p>
-
-</div>
-<br><br>
-<div> 
-     
-    <h3>Electricidad</h3>  
-     <div> <img src="IMG/electricidad.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 360</p>
-
-</div>
-<br><br>
-<div> 
-     
-    <h3>Electrónica</h3>  
-     <div> <img src="IMG/electronica.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 360</p>
-
-</div>
-<br><br>
-<div> 
-     
-    <h3>Confección y patronaje</h3>  
-     <div> <img src="https://ipisa.edu.do/wp-content/uploads/2018/08/1.png"></div>
-    <p>Cantidad de horas a trabajar: <br> 720</p>
-
-</div>
-</div>
 
     
 

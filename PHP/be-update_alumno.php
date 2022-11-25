@@ -13,7 +13,7 @@
 
     <?php
     
-   $mysqli = new mysqli("localhost", "root", "", "proyecto");
+   $mysqli = new mysqli("localhost", "root", "", "proyecto_depto");
 
    if ($mysqli->connect_errno) {
    echo "Fallo al conectar a MySQL: (" . $mysqli
@@ -63,7 +63,7 @@
 
     ?>
 
-    <form action="actualizar.php" method="post">
+    <form action="be-updateSQL_alumno.php" method="post">
         <ul>
             <li>
                 <label>ID:</label>
