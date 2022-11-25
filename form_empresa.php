@@ -146,10 +146,6 @@
             <span class="details">* Teléfono principal</span>
             <input type="text" name="telefono_principal" placeholder="1+ (829)-392-1233" required>
             <br> <br>
-            <span class="details" style="font-size: 20px !important;"> <b>Contacto dentro de la empresa</b> </span>
-            <br>
-            <span class="details">* Teléfono directo</span>
-            <input type="text" name="telef_emple" placeholder="1+ (809)-301-2939" required>
           </div>
           
           <div class="input-box">
@@ -166,7 +162,7 @@
                 </div>
                 <div class="hol">
                   <input type="hidden" class="pais" name="pais" value="">
-                  <input type="hidden" class="actividad" name="industria" value="">
+                
                 <ul class="options optionsJS">
                     <li class="option optionJS">
                         <span class="option-txt option-txtJS">
@@ -184,62 +180,10 @@
             </div>
             </div>
        
-            <span class="details">* Industria</span>
-            <div class="select-menu select-menuJS1">
-                <div class="select-btn select-btnJS1">
-                  <b>
-                    <span class="sBtn-text sBtn-textJS1">
-                        Elige una opción
-                    </span>
-                    <i class="bx bx-chevron-down"></i>
-                    </b>
-                </div>
-                <div class="hol holJS1">
-                <ul class="options optionsJS1">
-                    <li class="option optionJS1">
-                        <span class="option-txt option-txtJS1">
-                            Agrícola
-                        </span>
-                    </li>
-                </ul>
-                <ul class="options optionsJS1">
-                    <li class="option optionJS1">
-                        <span class="option-txt option-txtJS1">
-                            Comercio
-                        </span>
-                    </li>
-                </ul>
-                <ul class="options optionsJS1">
-                    <li class="option optionJS1">
-                        <span class="option-txt option-txtJS1">
-                            Industria de extracción
-                        </span>
-                    </li>
-                </ul>
-                <ul class="options optionsJS1">
-                    <li class="option optionJS1">
-                        <span class="option-txt option-txtJS1">
-                            Industria de manufactura
-                        </span>
-                    </li>
-                </ul>
-                <ul class="options optionsJS1">
-                    <li class="option optionJS1" id="option">
-                        <span class="option-txt option-txtJS1" id="option-txt">
-                            Servicios
-                        </span>
-                    </li>
-                </ul>
-                <ul class="options optionsJS1">
-                    <li class="option optionJS1" id="option">
-                        <span class="option-txt option-txtJS1">
-                            Otras...
-                        </span>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            <br>
+            <span class="details">* Industria </span>
+            <input type="text" name="industria" placeholder="Industria a la que se dedica">
+            
+            <br><br>
             <span class="details">* Municipio</span>
             <input type="text" name="municipio" placeholder="Municipio en el que se desarrolla." required>
             <br><br>
@@ -252,6 +196,10 @@
             <span class="details">* Extensión</span>
             <input type="text" name="extension_emple" placeholder="1+" required>
             <br><br>
+            <span class="details" style="font-size: 20px !important;"> <b>Contacto dentro de la empresa</b> </span>
+            <br>
+            <span class="details">* Teléfono directo</span>
+            <input type="text" name="telef_emple" placeholder="1+ (809)-301-2939" required><br><br>
             <span class="details">* Correo interno</span>
             <input type="text" name="correo_emple" placeholder="nombreEmail@dominio.com" required>
           </div>

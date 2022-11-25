@@ -8,20 +8,33 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
      <link rel="stylesheet" href="CSS/style_alumno.css">
+     <link rel="stylesheet" href="CSS/style_index.css">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 <body>
 <header data-aos="fade-in">
-        <a href="inicio.html" class="logo">
-            <h2 class="nombre">Inicio</h2>
-        </a>
-        <nav>
-            <a href="pasantia.html" class="link">Pasantía</a>
-            <a href="colaboradores.html" class="link">Colaboradores</a>
-            <a href="familia.html" class="link">Familia</a>
-            <a href="formularios.html" class="link">Formularios</a>
-        </nav>
-    </header>
+    <!--Menú-->
+    <a href="inicio.html" class="logo">
+        <!--img src="" class="logo"-->
+        <h2 class="nombre">Vinculación laboral</h2>
+    </a>
+
+    <!--Barra de navegación del menú-->
+    <nav>
+      <ul class="menu-horizontal">
+        <a href="pasantia.html" class="link a">Pasantía</a>
+        <a href="colaboradores.html" class="link a">Colaboradores</a>
+        <a href="familia.html" class="link a">Familia</a>
+        <li><a href="#" >Formularios</a>
+        <ul class="menu-vertical">
+          <li><a href="frm_alumno.php">Alumno</a></li>
+          <li><a href="frm_vacante.php">Vacantes</a></li>
+          <li><a href="form_empresa.php">Empresas</a></li>
+        </ul>
+      </li>
+      </ul>
+    </nav>
+</header>
 
     <br><br>
   <div class="container">
